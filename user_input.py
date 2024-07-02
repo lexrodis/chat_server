@@ -1,5 +1,3 @@
-
-
 def user_numbers(numbers_string):
     numbers_string
     numbers = numbers_string.split()
