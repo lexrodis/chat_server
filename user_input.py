@@ -31,6 +31,9 @@ class TestUserInput(unittest.TestCase):
     
     def test_user_numbers_error_no_with(self):
         self.assertRaises(ValueError, user_numbers, "oiu oui")
+
+    def test_user_numbers_reversed(self):
+        self.assertEqual(user_numbers("1 2 3"), [3,2,1])     
     
 if __name__ == '__main__':
     unittest.main()
