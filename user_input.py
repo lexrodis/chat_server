@@ -6,14 +6,17 @@ def user_numbers(numbers_string):
     except ValueError as e:
         raise ValueError(f"Invalid input: {e}")
 
-
 import unittest
 
+#main unittest class
 class TestUserInput(unittest.TestCase):
 
-    def test_user_numbers(self):
+    def test_user_numbers(self):                            
         self.assertEqual(user_numbers("1 2 3"), [1,2,3])
-
+    
+    def test_user_numbers_with_extra_spaces(self):                            
+        self.assertEqual(user_numbers("1  2  3"), [1,2,3])
+    
     def test_user_numbers_error(self):
         with self.assertRaises(ValueError):
             user_numbers("oiu oui")
