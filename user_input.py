@@ -10,6 +10,11 @@ class TestUserInput(unittest.TestCase):
 
     def test_user_numbers(self):
         self.assertEqual(user_numbers("1 2 3"), [1,2,3])
+
+def test_user_input_error(self):
+    self.assertRaises(<ErrorName>, user_input("oiu oiu"))
+
+
     
 if __name__ == '__main__':
     unittest.main()
