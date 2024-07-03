@@ -11,6 +11,10 @@ def user_numbers(numbers_string):
 # gives ["3", "2, "1"] 
 # and implement ths function
 
+def user_numbers_reversed(numbers):
+   result = list(reversed(user_numbers(numbers)))
+   return result
+
 
 
 import unittest
@@ -32,7 +36,7 @@ class TestUserInput(unittest.TestCase):
         self.assertRaises(ValueError, user_numbers, "oiu oui")
 
     def test_user_numbers_reversed(self):
-        self.assertEqual(user_numbers("1 2 3"), [3,2,1])     
+        self.assertEqual(user_numbers_reversed("1 2 3"), [3,2,1])     
     
 if __name__ == '__main__':
     unittest.main()
