@@ -11,7 +11,8 @@ def user_numbers(numbers_string):
 # gives ["3", "2, "1"] 
 # and implement ths function
 def user_numbers_reversed(numbers):
-    pass
+    self.assertEqual(user_numbers_reversed(["1", "2", "3"]), [3, 2, 1])
+
 
 import unittest
 
