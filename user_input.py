@@ -6,6 +6,13 @@ def user_numbers(numbers_string):
     except ValueError as e:
         raise ValueError(f"Invalid input: {e}")
 
+# write a test function which makes sure that 
+# user_numbers_reversed(["1", "2", "3"])
+# gives ["3", "2, "1"] 
+# and implement ths function
+def user_numbers_reversed(numbers):
+    pass
+
 import unittest
 
 #main unittest class
