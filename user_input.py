@@ -16,9 +16,8 @@ def user_numbers_reversed(numbers):
 # user_numbers_max(["1, 2, 3"])
 # gives 3 
 # and implement this function
-def user_numbers_max(numbers):
-    result = list(user_numbers(max(numbers)))
-    return result
+def user_numbers_max(numbers):   
+    return max(user_numbers(numbers))
 
 import unittest
 
