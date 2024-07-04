@@ -13,7 +13,7 @@ def user_numbers_reversed(numbers):
 # write a test function
 # test_user_numbers_max
 # which makes sure that 
-# user_numbers_max(["1", "2", "3"])
+# user_numbers_max(["1, 2, 3"])
 # gives 3 
 # and implement ths function
 
