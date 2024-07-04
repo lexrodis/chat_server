@@ -16,11 +16,7 @@ def user_numbers_reversed(numbers):
 # user_numbers_max(["1, 2, 3"])
 # gives 3 
 # and implement this function
-<<<<<<< HEAD
 def user_numbers_max(numbers):   
-=======
-def user_numbers_max(numbers):
->>>>>>> 76bf7a7 (---)
     return max(user_numbers(numbers))
 
 
