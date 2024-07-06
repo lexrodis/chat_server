@@ -18,6 +18,15 @@ def main():
     print ("The Biggest number is {}".format(biggest_number))
 
 
+    f = open('output.txt', 'w')
+    f.write(f'The result is {numbers_string}\n')
+    f.write(f'The smallest is {smallest_number}\n')
+    f.write(f'The biggest number is {biggest_number}\n')
+
+
+    f.close()
+
+
 
 
 if __name__ == "__main__":
