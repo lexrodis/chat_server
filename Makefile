@@ -1,4 +1,7 @@
 test:
 	python -m unittest *.py
 
-PHONY: test
+run: 
+	python main.py
+
+.PHONY: test 
