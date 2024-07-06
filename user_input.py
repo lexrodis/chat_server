@@ -16,12 +16,12 @@ def user_numbers_reversed(numbers):
 # user_numbers_max(["1, 2, 3"])
 # gives 3 
 # and implement this function
-def user_numbers_max(numbers):   
-    return max(user_numbers(numbers))
+def user_numbers_max(numbers_string):   
+    return max(user_numbers(numbers_string))
 
 
-def user_numbers_min(numbers):
-    return min(user_numbers(numbers))
+def user_numbers_min(numbers_string):
+    return min(user_numbers(numbers_string))
 
 import unittest
 
@@ -49,6 +49,11 @@ class TestUserInput(unittest.TestCase):
 
     def test_user_numbers_min(self):
         self.assertEqual(user_numbers_min("1 2 3"), 1)
+
+    def test_user_numbers_min_list(self):
+        self.assertEqual(min([1, 2, 3]), 1)
+
+
     
 if __name__ == '__main__':
     unittest.main()
