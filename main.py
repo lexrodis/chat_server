@@ -16,7 +16,7 @@ def main():
 
     f = open('output.txt', 'w')
     f.write(f'The result is {numbers.numbers}\n')
-    f.write(f'The smallest is {numbers.min()}\n')
+    f.write(f'The smallest is {numbers.min(=)}\n')
     f.write(f'The biggest number is {numbers.max()}\n')
 
 
