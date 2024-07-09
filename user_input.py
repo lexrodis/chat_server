@@ -21,6 +21,9 @@ class UserNumbers:
     def min(self):
         return min(self.numbers)
     
+    def printable(self):
+        return str(self.numbers)
+    
 
 import unittest
 

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from print_date import print_date, print_nice_date 
 from user_input import UserNumbers
+from user import ChatUser
 
 def main():
     """ Main program """
@@ -16,11 +17,17 @@ def main():
 
     f = open('output.txt', 'w')
     f.write(f'The result is {numbers.numbers}\n')
-    f.write(f'The smallest is {numbers.min(=)}\n')
+    f.write(f'The smallest is {numbers.min()}\n')
     f.write(f'The biggest number is {numbers.max()}\n')
 
 
     f.close()
+
+    user = ChatUser()
+    user.send_message(numbers.printable())
+    user_r = ChatUser("Ronaldo")
+    user_r.send_message("I hate messi")
+
 
 
 

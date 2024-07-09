@@ -11,7 +11,7 @@ class ChatUser:
     
 
     def send_message(self, message):
-        print(f'{message}\n')
+        print(f'{self.user_name}:\n    {message}\n')
         
     
 
@@ -27,4 +27,4 @@ class TestUserInput(unittest.TestCase):
         user = ChatUser()
         self.assertEquals(user.user_name, "anonymous")
 
-    def test
+    
